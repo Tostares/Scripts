@@ -5,9 +5,9 @@ echo "Where should they be located?"
 read path
 
 #cd $path
-	until [ $input = "no" ]
+	until [[ $input = "no" ]]
 do
-	echo "Do you want to create one more file?"
+	echo "Do you want to create a file?"
 	read input
 	filename="file$counter.txt"
 	touch "$path/$filename"
